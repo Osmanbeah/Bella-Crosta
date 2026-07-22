@@ -548,9 +548,10 @@ export default function AdminDashboard() {
                               order.order_status === 'pending_payment' ? 'bg-secondary-container text-on-secondary-container' :
                               order.order_status === 'paid' ? 'bg-tertiary-container text-on-tertiary-container' :
                               order.order_status === 'cod' ? 'bg-outline-variant text-on-secondary-container' :
+                              (order.order_status as string) === 'cancelled' ? 'bg-red-100 text-red-600' :
                               'bg-surface-container-high text-on-surface-variant'
                             }`}>
-                              {order.order_status.replace('_', ' ')}
+                              {order.order_status.replace(/_/g, ' ')}
                             </span>
                           </div>
                           <p className="text-xs text-on-surface-variant font-body mt-1">
@@ -571,6 +572,7 @@ export default function AdminDashboard() {
                             <option value="preparing">In Oven / Preparing</option>
                             <option value="out_for_delivery">Out for Delivery</option>
                             <option value="delivered">Delivered</option>
+                            <option value="cancelled">❌ Cancelled</option>
                           </select>
                         </div>
                       </div>
