@@ -114,8 +114,20 @@ export default function CheckoutPage() {
       // Clear the local cart
       cartManager.clear();
 
-      // Navigate to order-confirmed page
+      // Save order ID to LocalStorage array for tracking on client orders page
       const insertedOrder = data?.[0];
+      if (insertedOrder?.id) {
+        try {
+          const storedIds = localStorage.getItem('bella_crosta_order_ids');
+          const idsArray = storedIds ? JSON.parse(storedIds) : [];
+          idsArray.push(insertedOrder.id);
+          localStorage.setItem('bella_crosta_order_ids', JSON.stringify(idsArray));
+        } catch (storageErr) {
+          console.warn('Could not store order ID in localStorage:', storageErr);
+        }
+      }
+
+      // Navigate to order-confirmed page
       router.push(`/order-confirmed?id=${insertedOrder?.id || 'default'}`);
     } catch (err: any) {
       console.error(err);

@@ -13,9 +13,20 @@ export default function OrdersStatusPage() {
   useEffect(() => {
     async function loadOrders() {
       try {
+        const storedIds = localStorage.getItem('bella_crosta_order_ids');
+        const idsArray = storedIds ? JSON.parse(storedIds) : [];
+        
+        if (idsArray.length === 0) {
+          setOrders([]);
+          setLoading(false);
+          return;
+        }
+
+        // Query only matching local storage order IDs from the database
         const { data, error } = await supabase
           .from('orders')
           .select('*')
+          .in('id', idsArray)
           .order('created_at', { ascending: false });
 
         if (error) throw error;
