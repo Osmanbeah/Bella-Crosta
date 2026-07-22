@@ -7,6 +7,8 @@ import { ArrowRight, Star } from 'lucide-react';
 import { cartManager } from './cartStore';
 import { supabase } from './supabase';
 
+export const dynamic = 'force-dynamic';
+
 export default function Home() {
   const [bestSellers, setBestSellers] = React.useState<any[]>([]);
 

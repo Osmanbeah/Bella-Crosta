@@ -7,6 +7,8 @@ import { supabase } from '../supabase';
 import { CartItem } from '../types';
 import { ShoppingBag } from 'lucide-react';
 
+export const dynamic = 'force-dynamic';
+
 export default function MenuPage() {
   const [activeCategory, setActiveCategory] = useState('All');
   const [items, setItems] = useState<Omit<CartItem, 'quantity'>[]>([]);

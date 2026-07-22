@@ -5,6 +5,8 @@ import AppShell from '../AppShell';
 import { Mail, Phone, MapPin, ExternalLink } from 'lucide-react';
 import { supabase } from '../supabase';
 
+export const dynamic = 'force-dynamic';
+
 export default function ContactLocationsPage() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
