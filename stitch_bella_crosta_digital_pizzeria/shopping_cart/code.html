@@ -1,0 +1,280 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Your Cart - Bella Crosta</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&amp;family=Work+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-high": "#eae8e4",
+                    "on-background": "#1b1c1a",
+                    "background": "#fbf9f5",
+                    "tertiary-container": "#61732b",
+                    "surface-container-highest": "#e4e2de",
+                    "on-tertiary-fixed": "#161e00",
+                    "inverse-primary": "#ffb59b",
+                    "secondary": "#9f402d",
+                    "primary-fixed-dim": "#ffb59b",
+                    "surface-dim": "#dbdad6",
+                    "inverse-surface": "#30312e",
+                    "tertiary-fixed": "#d7ec95",
+                    "surface-bright": "#fbf9f5",
+                    "on-primary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "primary": "#973100",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed": "#380d00",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "on-surface-variant": "#594139",
+                    "outline": "#8d7167",
+                    "on-tertiary-container": "#e3f8a0",
+                    "outline-variant": "#e1bfb4",
+                    "primary-fixed": "#ffdbcf",
+                    "primary-container": "#c04000",
+                    "on-secondary-container": "#732010",
+                    "secondary-fixed": "#ffdad3",
+                    "on-secondary-fixed": "#3e0500",
+                    "tertiary-fixed-dim": "#bbcf7c",
+                    "on-tertiary-fixed-variant": "#3d4c05",
+                    "inverse-on-surface": "#f2f0ed",
+                    "surface": "#fbf9f5",
+                    "error-container": "#ffdad6",
+                    "tertiary": "#4a5a14",
+                    "surface-container-low": "#f5f3ef",
+                    "secondary-fixed-dim": "#ffb4a5",
+                    "surface-container": "#efeeea",
+                    "on-tertiary": "#ffffff",
+                    "surface-variant": "#e4e2de",
+                    "surface-tint": "#a93700",
+                    "on-secondary-fixed-variant": "#802918",
+                    "on-primary-fixed-variant": "#812800",
+                    "on-primary-container": "#ffe9e3",
+                    "error": "#ba1a1a",
+                    "on-surface": "#1b1c1a",
+                    "secondary-container": "#fd876f"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "40px",
+                    "container-max": "1280px",
+                    "unit": "8px",
+                    "gutter": "24px",
+                    "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                    "body-md": ["Work Sans"],
+                    "headline-sm": ["Bricolage Grotesque"],
+                    "display-lg-mobile": ["Bricolage Grotesque"],
+                    "display-lg": ["Bricolage Grotesque"],
+                    "body-lg": ["Work Sans"],
+                    "label-md": ["Work Sans"],
+                    "headline-md": ["Bricolage Grotesque"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "display-lg-mobile": ["36px", {"lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "800"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            vertical-align: middle;
+        }
+        .pizza-crop {
+            mask-image: radial-gradient(circle, black 100%, transparent 100%);
+            -webkit-mask-image: radial-gradient(circle, black 100%, transparent 100%);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #8d7167;
+            border-radius: 10px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+<!-- Top AppBar (JSON derived structure) -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile h-16 bg-surface shadow-sm">
+<button class="text-on-surface hover:opacity-80 transition-opacity active:scale-95 transition-transform">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="font-headline-md text-headline-sm font-bold text-primary tracking-tight">Your Cart</h1>
+<button class="text-on-surface hover:opacity-80 transition-opacity active:scale-95 transition-transform">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</header>
+<!-- Main Content Area -->
+<main class="flex-grow pt-20 pb-32 px-margin-mobile max-w-container-max mx-auto w-full">
+<!-- Cart Item List -->
+<div class="space-y-6">
+<!-- Item 1: Margherita -->
+<div class="bg-surface-container-lowest p-4 rounded-xl flex items-center gap-4 shadow-[0px_4px_20px_rgba(51,51,51,0.05)] border border-outline-variant/30">
+<div class="w-24 h-24 flex-shrink-0">
+<img class="w-full h-full object-cover rounded-full pizza-crop" data-alt="A top-down, circular crop of an artisanal Margherita pizza with a blistered wood-fired crust, vibrant red tomato sauce, melted pools of fresh white mozzarella, and bright green basil leaves. The lighting is warm and natural, suggesting a rustic Italian kitchen. The overall aesthetic is clean, high-end, and appetite-inducing, set against the light cream surface of the design system." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC78oWRfWpW0wWEVN2-LyG9z0Nf89Tn8c5sSba-3tBpyz02AIMWIUHHl4HFgSsJs8wQ_hLjZ2PA9UX3rT8Gz1XC6a1zO4V01tr0GZSlrpgBhEyrD9W6MnAerxbwEntup75TIACBeGc9Oyogpaqtio8U05Cd28OmpqMy-wmuIPy1RPY0dbmbxBMnpwbjbFROGaHMHvfC9A9MLYMNicYzkGXcgB6ROjUpaLRiYwb9wc4cEtNFMkyjtxt5hr_6e0NgotT_-Pg2_31Gl5M">
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-sm text-body-lg text-on-surface font-bold">Margherita</h3>
+<p class="text-on-surface-variant font-label-md">Classic sourdough, san marzano</p>
+</div>
+<p class="font-headline-sm text-body-lg text-primary">$28.00</p>
+</div>
+<div class="flex justify-between items-center mt-4">
+<div class="flex items-center gap-4 bg-surface-container-high rounded-full px-3 py-1">
+<button class="text-primary hover:bg-primary/10 rounded-full w-8 h-8 flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-sm">remove</span>
+</button>
+<span class="font-bold text-on-surface">2</span>
+<button class="text-primary hover:bg-primary/10 rounded-full w-8 h-8 flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+<button class="text-on-surface-variant hover:text-error transition-colors">
+<span class="material-symbols-outlined">delete</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 2: Ortolana -->
+<div class="bg-surface-container-lowest p-4 rounded-xl flex items-center gap-4 shadow-[0px_4px_20px_rgba(51,51,51,0.05)] border border-outline-variant/30">
+<div class="w-24 h-24 flex-shrink-0">
+<img class="w-full h-full object-cover rounded-full pizza-crop" data-alt="A circular, overhead view of an Ortolana pizza featuring a golden crust, topped with roasted Mediterranean vegetables including grilled zucchini, bell peppers, and artichokes. The pizza is glistening with a touch of extra virgin olive oil. The lighting is soft and flattering, emphasizing the rich textures and organic colors of the fresh ingredients. The image maintains a premium, tactile look consistent with a rustic-modern digital pizzeria." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfcTYhaRSLnGet_ehPaowKsatUPrVPvS6YjU4KS6rKUZ6NYgZ4LwrITUpDcNR-oJHaJdYAEywpoMXwDSqtlOA3eMvAIYVjK6ilWIPgXTqydjMqqHLuwmTT81j1QwdrQO8gGOlT26AW3k6nUymkZB337q0WwR80BEpHCOjl1-HnRHgWY3QpvCG_Ua72SzAcZqwQpfhtmmS03pc5bcTSgrpIuTxRpzZmme2MygrVTUTz0eEXHWvrXB--31pWD1EfjbaOXjcl-jus0fQ">
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-sm text-body-lg text-on-surface font-bold">Ortolana</h3>
+<p class="text-on-surface-variant font-label-md">Roasted veggies, olive tapenade</p>
+</div>
+<p class="font-headline-sm text-body-lg text-primary">$16.50</p>
+</div>
+<div class="flex justify-between items-center mt-4">
+<div class="flex items-center gap-4 bg-surface-container-high rounded-full px-3 py-1">
+<button class="text-primary hover:bg-primary/10 rounded-full w-8 h-8 flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-sm">remove</span>
+</button>
+<span class="font-bold text-on-surface">1</span>
+<button class="text-primary hover:bg-primary/10 rounded-full w-8 h-8 flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+<button class="text-on-surface-variant hover:text-error transition-colors">
+<span class="material-symbols-outlined">delete</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Special Instructions -->
+<div class="mt-8">
+<label class="block font-bold text-label-md text-on-surface-variant mb-2 ml-1">Special Instructions</label>
+<textarea class="w-full bg-surface-container-low border border-outline-variant rounded-xl p-4 focus:ring-2 focus:ring-primary focus:border-primary transition-all font-body-md placeholder:text-on-surface-variant/50" placeholder="Any allergies or crust preferences?" rows="3"></textarea>
+</div>
+</div>
+<!-- Order Summary -->
+<div class="mt-10 bg-surface-container-low rounded-2xl p-6 space-y-4">
+<div class="flex justify-between text-body-md text-on-surface-variant">
+<span class="">Subtotal</span>
+<span class="">$44.50</span>
+</div>
+<div class="flex justify-between text-body-md text-on-surface-variant">
+<span class="">Estimated Tax (8%)</span>
+<span class="">$3.56</span>
+</div>
+<div class="flex justify-between text-body-md text-on-surface-variant">
+<span class="">Delivery Fee</span>
+<span class="">$2.50</span>
+</div>
+<div class="pt-4 border-t border-outline-variant flex justify-between items-center">
+<span class="font-headline-sm text-on-surface font-bold">Total</span>
+<span class="font-headline-sm text-primary font-bold">$50.56</span>
+</div>
+</div>
+<!-- Proceed Button -->
+<div class="mt-8">
+<button class="w-full bg-primary-container text-on-primary-container font-headline-sm py-4 rounded-xl shadow-lg hover:opacity-90 active:scale-[0.98] transition-all flex items-center justify-center gap-2">
+<span class="">Proceed to Checkout</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</main>
+<!-- Bottom Navigation Bar (JSON derived) -->
+<!-- Determined active: Account (since Cart is often a sub-page of Account or a dead end, but user specifically asked for Menu to be inactive) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 pb-safe border-t border-outline-variant bg-surface rounded-t-xl shadow-lg"><!-- Destination 1: Home -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-variant/50 active:scale-90 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-md text-label-md">Home</span>
+</a>
+<!-- Destination 2: Menu -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-variant/50 active:scale-90 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">local_pizza</span>
+<span class="font-label-md text-label-md">Menu</span>
+</a>
+<!-- Destination 3: Orders (Active) -->
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl px-4 py-1 active:scale-90 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">receipt_long</span>
+<span class="font-label-md text-label-md">Orders</span>
+</a>
+<!-- Destination 4: Story -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-variant/50 active:scale-90 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">auto_stories</span>
+<span class="font-label-md text-label-md">Story</span>
+</a>
+<!-- Destination 5: Account -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-variant/50 active:scale-90 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-label-md text-label-md">Account</span>
+</a></nav>
+<script>
+        // Micro-interactions for quantity controls
+        document.querySelectorAll('button').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const span = e.currentTarget.parentElement.querySelector('span:not(.material-symbols-outlined)');
+                if (!span) return;
+                
+                let val = parseInt(span.textContent);
+                if (e.currentTarget.querySelector('span').textContent === 'add') {
+                    span.textContent = val + 1;
+                } else if (e.currentTarget.querySelector('span').textContent === 'remove' && val > 1) {
+                    span.textContent = val - 1;
+                }
+            });
+        });
+    </script>
+
+
+</body></html>

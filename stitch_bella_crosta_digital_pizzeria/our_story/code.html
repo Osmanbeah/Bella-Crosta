@@ -1,0 +1,282 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Our Story | Bella Crosta Artisanal Pizza</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;700;800&amp;family=Work+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-container": "#732010",
+                    "on-error-container": "#93000a",
+                    "inverse-surface": "#30312e",
+                    "secondary-fixed": "#ffdad3",
+                    "on-tertiary-fixed": "#161e00",
+                    "inverse-on-surface": "#f2f0ed",
+                    "error-container": "#ffdad6",
+                    "background": "#fbf9f5",
+                    "secondary-container": "#fd876f",
+                    "on-surface-variant": "#594139",
+                    "primary-fixed": "#ffdbcf",
+                    "tertiary-container": "#61732b",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "primary-fixed-dim": "#ffb59b",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#eae8e4",
+                    "tertiary": "#4a5a14",
+                    "surface-container-highest": "#e4e2de",
+                    "on-tertiary-container": "#e3f8a0",
+                    "on-background": "#1b1c1a",
+                    "surface-container": "#efeeea",
+                    "on-primary-fixed": "#380d00",
+                    "on-surface": "#1b1c1a",
+                    "on-error": "#ffffff",
+                    "on-primary-container": "#ffe9e3",
+                    "inverse-primary": "#ffb59b",
+                    "secondary-fixed-dim": "#ffb4a5",
+                    "primary-container": "#c04000",
+                    "outline": "#8d7167",
+                    "surface-dim": "#dbdad6",
+                    "surface-bright": "#fbf9f5",
+                    "on-secondary-fixed-variant": "#802918",
+                    "tertiary-fixed-dim": "#bbcf7c",
+                    "on-tertiary-fixed-variant": "#3d4c05",
+                    "surface": "#fbf9f5",
+                    "on-secondary-fixed": "#3e0500",
+                    "surface-container-low": "#f5f3ef",
+                    "outline-variant": "#e1bfb4",
+                    "tertiary-fixed": "#d7ec95",
+                    "surface-tint": "#a93700",
+                    "on-primary-fixed-variant": "#812800",
+                    "secondary": "#9f402d",
+                    "surface-variant": "#e4e2de",
+                    "on-primary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "primary": "#973100"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "container-max": "1280px",
+                    "margin-desktop": "40px",
+                    "margin-mobile": "16px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "label-md": ["Work Sans"],
+                    "display-lg-mobile": ["Bricolage Grotesque"],
+                    "body-lg": ["Work Sans"],
+                    "headline-sm": ["Bricolage Grotesque"],
+                    "display-lg": ["Bricolage Grotesque"],
+                    "body-md": ["Work Sans"],
+                    "headline-md": ["Bricolage Grotesque"]
+            },
+            "fontSize": {
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "display-lg-mobile": ["36px", {"lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "800"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .linen-texture {
+            background-image: url("https://www.transparenttextures.com/patterns/natural-linen-color.png");
+            opacity: 0.03;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md text-body-md overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 bg-surface shadow-sm flex justify-between items-center px-margin-mobile md:px-margin-desktop h-16">
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-on-surface hover:opacity-80 transition-opacity active:scale-95 transition-transform" data-icon="menu">menu</button>
+<h1 class="font-headline-md text-headline-md font-bold text-primary tracking-tight">Bella Crosta</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-label-md text-on-surface-variant hover:opacity-80" href="#">Menu</a>
+<a class="font-label-md text-label-md text-primary font-bold" href="#">Story</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:opacity-80" href="#">Locations</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-primary hover:opacity-80 transition-opacity active:scale-95 transition-transform" data-icon="shopping_bag">shopping_bag</button>
+</div>
+</header>
+<main class="pt-16">
+<!-- Hero Section -->
+<section class="relative h-[707px] min-h-[600px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-black/40 z-10 transition-all duration-1000 opacity-100 translate-y-0"></div>
+<div class="absolute inset-0 w-full h-full bg-cover bg-center transition-all duration-1000 opacity-100 translate-y-0" data-alt="A cinematic, high-detail photograph of a traditional Italian wood-fired pizza oven. Glowing orange embers and soft flames dance inside the stone dome, casting a warm, atmospheric light across the scene. The aesthetic is rustic and artisanal, with a focus on tactile textures and rich terracotta tones that evoke a high-end culinary experience. Soft smoke swirls gently in the dim light of a professional kitchen environment." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCb4WveJmpyLkMXqZUZ-2knpP-VazOdnYh8wF4H7nfqEjqjez_-MAdmEz83bLJO3skBgt7-ipcTDErJ7jVFIQJevNjpVzp-RcvlUZn_FJBywlvdOM_ZMd6v1NZ6oRJwdvKqKFLDVhZOGCJ8x2eI5_18tFdOGWi-EZ3jC28kMmEph0XWSzxexIocQG2huHIwkIaBKwZWkY30Gz__dSwdAi79-7zz6fuzVS0lg8w2JeQrri64GybzpLaIZdbjeiM1sf8FzhebpUMo6_M')"></div>
+<div class="relative z-20 text-center px-margin-mobile transition-all duration-1000 opacity-100 translate-y-0">
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-white mb-6">The Soul of Bella Crosta</h2>
+<div class="w-24 h-1 bg-primary-container mx-auto rounded-full"></div>
+</div>
+</section>
+<!-- Brand Heritage -->
+<section class="relative py-24 px-margin-mobile md:px-margin-desktop bg-surface overflow-hidden">
+<div class="absolute inset-0 linen-texture pointer-events-none transition-all duration-1000 opacity-100 translate-y-0"></div>
+<div class="max-w-container-max mx-auto grid md:grid-cols-2 gap-16 items-center transition-all duration-1000 opacity-100 translate-y-0">
+<div class="space-y-8">
+<span class="font-label-md text-label-md text-primary tracking-widest">EST. 1964</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Our Roots</h3>
+<div class="space-y-6 text-on-surface-variant">
+<p class="font-body-lg text-body-lg leading-relaxed">
+                            Before the first flame was lit in our modern hearth, Bella Crosta lived as a whispered secret in the cobblestone alleys of a small mountain village near Naples. It was here that our family perfected the rhythm of the dough—a dance of timing, temperature, and touch.
+                        </p>
+<p class="font-body-lg text-body-lg leading-relaxed">
+                            We carried that tradition across oceans, not just in recipes, but in the memory of the way a perfect crust should shatter upon the first bite. Today, we bridge the gap between ancient artistry and modern culinary precision, honoring every ingredient that touches our flour-dusted boards.
+                        </p>
+</div>
+</div>
+<div class="relative h-[500px] rounded-xl overflow-hidden shadow-soft rotate-2 hover:rotate-0 transition-transform duration-700">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A vintage-inspired black and white photograph of a bustling Italian village square during the golden hour. The image has a soft grain and captures a timeless, nostalgic atmosphere with rustic stone architecture and community life. The lighting is warm and evocative, suggesting a deep-rooted heritage and artisanal tradition. Pristine white and deep charcoal tones dominate the aesthetic, keeping it consistent with a modern-rustic fusion brand." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBIvyC1_LFd6I3ufqvnKr16utQ43HL3ik1cIwDskA4RXhqxr_8mVS_vgFzFOXQ4fdJsgPIeS6feJpxPMpVdiPwLF31ocElit466hHYh7LUOOBnYrWQjkcFEjWhIV2rc0XP8t1TOGWIaBAfCDJx41gWqLl0pgMgXHkc0WxAfYGUGthOR5h0q8l-YQtD1KIomRBHBXDWsMp2QESqv5Y7JNuuOMSWtFWSTQC1-fH81S19hsox3mSSoymasCVz17Ay8p8I2dmyhwHQ8FmY')"></div>
+</div>
+</div>
+</section>
+<!-- Founder's Story -->
+<section class="py-24 bg-surface-container-low px-margin-mobile">
+<div class="max-w-4xl mx-auto bg-white p-8 md:p-16 rounded-xl shadow-sm border border-outline-variant flex flex-col md:flex-row gap-12 items-center transition-all duration-1000 opacity-100 translate-y-0">
+<div class="w-48 h-48 md:w-64 md:h-64 flex-shrink-0 rounded-full overflow-hidden border-4 border-primary-container shadow-lg">
+<img class="w-full h-full object-cover" data-alt="A dignified, close-up portrait of an elderly Italian pizzaiolo with kind, wrinkled eyes and flour-dusted hands. He is wearing a simple linen apron in a warm kitchen environment. The lighting is soft and directional, highlighting the textures of his skin and the authenticity of his craft. The mood is warm, trustworthy, and evokes a sense of lifelong dedication to the art of pizza making." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDo0Ub38kjS0zspqCBc0OhrpHC1PI2dlxAeHHUyn1bXp26r04xFCVYgJwiLluBekGSBS9TONejeCwiLwMVen2rOb4dlZGCS1x3UekNSdyqYyoBFl_W181Qb6UaW1fzspr9Z91FixjuZj64ZRRAN8aTPZ3wn2GHn7etrGej2vnqIkgbw-lGyUlOOIc6PJ6w_2l6v-aK8r-KgcbGxu52hKWxhFHtcHk_rxR3H2bgcSPJ3u-vraUY-m9dt6ZEDrUtnegkITcqn8teTRE4">
+</div>
+<div class="flex-1 space-y-6">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">A Legacy in the Dough</h3>
+<blockquote class="italic font-headline-sm text-headline-sm text-primary leading-snug">
+                        "The dough is a living thing. You don't master it; you listen to it. The 'crosta' isn't just bread—it's the soul of the grain, transformed by fire and patience."
+                    </blockquote>
+<p class="font-label-md text-label-md text-on-surface-variant font-bold">— Nonno Giuseppe, Master Pizzaiolo</p>
+</div>
+</div>
+</section>
+<!-- Quality & Values (Vertical List/Grid) -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface relative">
+<div class="max-w-container-max mx-auto text-center mb-16 transition-all duration-1000 opacity-100 translate-y-0">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">The Pillars of Perfection</h3>
+<p class="text-on-surface-variant max-w-2xl mx-auto">We don't cut corners. From the soil where our tomatoes grow to the time our dough spends fermenting, every detail is intentional.</p>
+</div>
+<div class="max-w-container-max mx-auto grid md:grid-cols-3 gap-12 transition-all duration-1000 opacity-100 translate-y-0">
+<!-- Fresh Ingredients -->
+<div class="group flex flex-col items-center text-center space-y-6">
+<div class="w-40 h-40 rounded-full overflow-hidden shadow-md ring-4 ring-white ring-offset-4 ring-offset-outline-variant group-hover:scale-105 transition-transform duration-500">
+<img class="w-full h-full object-cover" data-alt="A vibrant, top-down photograph of sun-ripened San Marzano tomatoes and a ball of fresh buffalo mozzarella on a rustic stone surface. The colors are rich and saturated, with deep reds and creamy whites dominating. Soft natural lighting creates gentle highlights on the smooth textures. The overall aesthetic is artisanal and emphasizes the high quality and freshness of the ingredients in a modern light-mode setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAec5tknfmChuXUzRdD6szXLdhNDQ097nGeZTcUzagXt92Ifv-OL3Edp_kPxA0O__twOY9-WRo77WYNgBcpnU0pGYVbLCYpVZmeX94i38Kex0y_3s2tC2MAw444urc_O1RfmKt2H1IAspQHGnXz7FXq6JMRkJWcrvNiPbR-Mw0wEOdDR5jVfS4e9maR46LNGPYPvwAZ3wunQMzu0I9_fRPxQpwSMIS3jDVb3u1Cpp6e33Faz0KWKGtfwFbp4I8AQSXrWQvzk_uN-VE">
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Fresh Ingredients</h4>
+<p class="text-on-surface-variant">Sun-drenched San Marzano tomatoes and locally sourced mozzarella di bufala, delivered every morning.</p>
+</div>
+<!-- Time-Honored Technique -->
+<div class="group flex flex-col items-center text-center space-y-6">
+<div class="w-40 h-40 rounded-full overflow-hidden shadow-md ring-4 ring-white ring-offset-4 ring-offset-outline-variant group-hover:scale-105 transition-transform duration-500">
+<img class="w-full h-full object-cover" data-alt="A detailed macro shot of wild-fermented pizza dough being gently stretched by artisanal hands. Tiny air bubbles are visible on the surface, showcasing the light and airy texture. The scene is dusted with a fine layer of flour, and the warm, earthy tones emphasize the natural process. Soft, diffused lighting highlights the organic shapes and tactile nature of the dough in a professional, high-end kitchen." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoS4iuYsD5pdDDbjXSGB5VCh1KKZTvOeqGhQgMQwN7HGFMZ0OXhIldkfI7E5NxvgaifnfAr9_Yk9HCZtacOtnvE7oVyRLG1dTaku_TDkd5GK5V4uHY4py-cr9RAMXRJlKmrNm1pb7fePeKKE_WN-pNqZeGIZOaj4Z6oxV_VK_p5GloUV78rzbRE4Zw7tCBO35rARbbjkriC9K-dpcjhZ1dGgeGtB1crThYwLN89GITipjZwP3Tf2Val51-c775xLHcYCZd9GvlzF4">
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Wild Fermentation</h4>
+<p class="text-on-surface-variant">Our signature dough ferments for 48 hours using wild yeast strains for a light, digestible, and flavorful crust.</p>
+</div>
+<!-- Community First -->
+<div class="group flex flex-col items-center text-center space-y-6">
+<div class="w-40 h-40 rounded-full overflow-hidden shadow-md ring-4 ring-white ring-offset-4 ring-offset-outline-variant group-hover:scale-105 transition-transform duration-500">
+<img class="w-full h-full object-cover" data-alt="A warm, candid photograph of friends and family laughing around a long communal wooden table laden with various pizzas and carafes of wine. The lighting is golden and inviting, capturing a sense of joy and connection. The background is a blurred, rustic pizzeria interior with warm wood and cream-colored walls, reflecting a community-focused brand identity in a modern light-mode style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMPpVSSw2JwBId-1GLTUuK3IuSwyRRmW_DQJyCrRBoERjHe4Mv2qsODhWvt97GIJyScPlulWLfaLO09tHIP96y2PolBX7kSfrrdkAFR8Bsa_jClb-2AyRvLdiZuqywGIG7EVnj6XkoOpNm07Yc7JbtWftObB91yjCYOMs31HxpsIaFGlnA9sIAo9GEj2FFVgKmK1UuyPf1RU_VqOpeu23cr-fZD7n8sDGlZHw4ZcwjpDCMIQArzYnMh4uQAbA9v4lEPWLigEt0chI">
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Community First</h4>
+<p class="text-on-surface-variant">We believe the best memories are made over shared crusts. Our pizzeria is a home for your family and ours.</p>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="py-24 bg-primary px-margin-mobile text-center">
+<h3 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-white mb-8">Taste the Tradition</h3>
+<div class="flex flex-col sm:flex-row justify-center gap-4 transition-all duration-1000 opacity-100 translate-y-0">
+<button class="bg-primary-container text-white px-10 py-4 rounded-lg font-label-md text-label-md hover:bg-on-secondary-container transition-colors shadow-lg">Order Your Pizza</button>
+<button class="border-2 border-white text-white px-10 py-4 rounded-lg font-label-md text-label-md hover:bg-white hover:text-primary transition-all">View Our Menu</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-margin-desktop py-12 gap-8 border-t border-outline-variant">
+<div class="flex flex-col gap-4 text-center md:text-left">
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold">Bella Crosta</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">Crafting artisanal memories one wood-fired crust at a time.</p>
+<div class="flex gap-4 justify-center md:justify-start">
+<a class="material-symbols-outlined text-on-surface-variant hover:text-primary" data-icon="public" href="#">public</a>
+<a class="material-symbols-outlined text-on-surface-variant hover:text-primary" data-icon="share" href="#">share</a>
+<a class="material-symbols-outlined text-on-surface-variant hover:text-primary" data-icon="mail" href="#">mail</a>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-x-12 gap-y-4">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary underline transition-all" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary underline transition-all" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary underline transition-all" href="#">Sustainability</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary underline transition-all" href="#">Allergens</a>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-center md:text-right">
+            © 2024 Bella Crosta Artisanal Pizza. Crafted with passion.
+        </p>
+</footer>
+<!-- Bottom Navigation (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 bg-surface border-t border-outline-variant shadow-lg flex justify-around items-center px-4 py-2 pb-safe"><div class="flex flex-col items-center justify-center text-on-surface-variant py-1">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label-md text-label-md">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant py-1">
+<span class="material-symbols-outlined" data-icon="local_pizza">local_pizza</span>
+<span class="font-label-md text-label-md">Menu</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant py-1">
+<span class="material-symbols-outlined" data-icon="receipt_long">receipt_long</span>
+<span class="font-label-md text-label-md">Orders</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl px-4 py-1">
+<span class="material-symbols-outlined" data-icon="auto_stories">auto_stories</span>
+<span class="font-label-md text-label-md">Story</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant py-1">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-label-md text-label-md">Account</span>
+</div></nav>
+<script>
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section > div').forEach(el => {
+            el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+    </script>
+
+
+</body></html>

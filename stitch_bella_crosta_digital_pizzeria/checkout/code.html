@@ -1,0 +1,357 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Checkout | Bella Crosta Artisanal Pizza</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&amp;family=Work+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-high": "#eae8e4",
+                    "on-background": "#1b1c1a",
+                    "background": "#fbf9f5",
+                    "tertiary-container": "#61732b",
+                    "surface-container-highest": "#e4e2de",
+                    "on-tertiary-fixed": "#161e00",
+                    "inverse-primary": "#ffb59b",
+                    "secondary": "#9f402d",
+                    "primary-fixed-dim": "#ffb59b",
+                    "surface-dim": "#dbdad6",
+                    "inverse-surface": "#30312e",
+                    "tertiary-fixed": "#d7ec95",
+                    "surface-bright": "#fbf9f5",
+                    "on-primary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "primary": "#973100",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed": "#380d00",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "on-surface-variant": "#594139",
+                    "outline": "#8d7167",
+                    "on-tertiary-container": "#e3f8a0",
+                    "outline-variant": "#e1bfb4",
+                    "primary-fixed": "#ffdbcf",
+                    "primary-container": "#c04000",
+                    "on-secondary-container": "#732010",
+                    "secondary-fixed": "#ffdad3",
+                    "on-secondary-fixed": "#3e0500",
+                    "tertiary-fixed-dim": "#bbcf7c",
+                    "on-tertiary-fixed-variant": "#3d4c05",
+                    "inverse-on-surface": "#f2f0ed",
+                    "surface": "#fbf9f5",
+                    "error-container": "#ffdad6",
+                    "tertiary": "#4a5a14",
+                    "surface-container-low": "#f5f3ef",
+                    "secondary-fixed-dim": "#ffb4a5",
+                    "surface-container": "#efeeea",
+                    "on-tertiary": "#ffffff",
+                    "surface-variant": "#e4e2de",
+                    "surface-tint": "#a93700",
+                    "on-secondary-fixed-variant": "#802918",
+                    "on-primary-fixed-variant": "#812800",
+                    "on-primary-container": "#ffe9e3",
+                    "error": "#ba1a1a",
+                    "on-surface": "#1b1c1a",
+                    "secondary-container": "#fd876f"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "40px",
+                    "container-max": "1280px",
+                    "unit": "8px",
+                    "gutter": "24px",
+                    "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                    "body-md": ["Work Sans"],
+                    "headline-sm": ["Bricolage Grotesque"],
+                    "display-lg-mobile": ["Bricolage Grotesque"],
+                    "display-lg": ["Bricolage Grotesque"],
+                    "body-lg": ["Work Sans"],
+                    "label-md": ["Work Sans"],
+                    "headline-md": ["Bricolage Grotesque"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "display-lg-mobile": ["36px", {"lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "800"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .linen-texture {
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n' x='0' y='0'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+        }
+        .custom-shadow {
+            box-shadow: 0px 4px 20px rgba(51, 51, 51, 0.05);
+        }
+        input:focus {
+            outline: none;
+            border-width: 2px !important;
+            border-color: #1b1c1a !important;
+        }
+        .active-toggle {
+            background-color: #c04000;
+            color: #ffffff;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md linen-texture min-h-screen pb-24">
+<!-- Top App Bar (Minimal for Checkout) -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-16 bg-surface shadow-sm">
+<button class="flex items-center gap-2 text-on-surface hover:opacity-80 transition-opacity" onclick="window.history.back()">
+<span class="material-symbols-outlined">arrow_back</span>
+<span class="font-label-md text-label-md">BACK</span>
+</button>
+<h1 class="font-headline-md text-headline-md font-bold text-primary tracking-tight">Bella Crosta</h1>
+<div class="w-10"></div> <!-- Spacer for balance -->
+</header>
+<main class="mt-20 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Checkout Form Section -->
+<div class="lg:col-span-7 space-y-8">
+<!-- Toggle Selector -->
+<section>
+<div class="bg-surface-container-low p-1 rounded-xl flex items-center">
+<button class="flex-1 py-3 rounded-lg font-label-md text-label-md transition-all active-toggle" id="deliveryBtn" onclick="setMode('delivery')">
+                            DELIVERY
+                        </button>
+<button class="flex-1 py-3 rounded-lg font-label-md text-label-md transition-all text-on-surface-variant hover:bg-surface-variant/50" id="pickupBtn" onclick="setMode('pickup')">
+                            PICKUP
+                        </button>
+</div>
+</section>
+<!-- Personal Info -->
+<section class="space-y-6">
+<h2 class="font-headline-sm text-headline-sm">Your Details</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface-variant px-1">FULL NAME</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg px-4 py-3 text-body-md" placeholder="Enzo Ferrari" type="text">
+</div>
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface-variant px-1">PHONE NUMBER</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg px-4 py-3 text-body-md" placeholder="+39 012 345 6789" type="tel">
+</div>
+</div>
+</section>
+<!-- Address Section (Conditional) -->
+<section class="space-y-6 transition-all" id="addressSection">
+<h2 class="font-headline-sm text-headline-sm">Delivery Address</h2>
+<div class="space-y-4">
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface-variant px-1">STREET ADDRESS</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg px-4 py-3 text-body-md" placeholder="Via del Corso, 12" type="text">
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface-variant px-1">APARTMENT / SUITE</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg px-4 py-3 text-body-md" placeholder="Apt 4B" type="text">
+</div>
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface-variant px-1">ZIP CODE</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg px-4 py-3 text-body-md" placeholder="00186" type="text">
+</div>
+</div>
+</div>
+</section>
+<!-- Payment Method -->
+<section class="space-y-6">
+<h2 class="font-headline-sm text-headline-sm">Payment Method</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<label class="relative flex items-center p-4 bg-white border-2 border-primary rounded-xl cursor-pointer custom-shadow">
+<input checked="" class="hidden" name="payment" type="radio" value="card">
+<span class="material-symbols-outlined text-primary mr-3">credit_card</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md">CREDIT / DEBIT CARD</span>
+<span class="text-xs text-on-surface-variant">Secure checkout via Stripe</span>
+</div>
+<span class="material-symbols-outlined ml-auto text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</label>
+<label class="relative flex items-center p-4 bg-white border-2 border-outline-variant rounded-xl cursor-pointer hover:border-outline transition-colors">
+<input class="hidden" name="payment" type="radio" value="cash">
+<span class="material-symbols-outlined text-on-surface-variant mr-3">payments</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md">CASH ON ARRIVAL</span>
+<span class="text-xs text-on-surface-variant">Pay when you receive food</span>
+</div>
+</label>
+</div>
+</section>
+</div>
+<!-- Summary Sidebar -->
+<div class="lg:col-span-5">
+<div class="sticky top-24 space-y-6">
+<div class="bg-white rounded-2xl p-6 custom-shadow border border-surface-variant">
+<h3 class="font-headline-sm text-headline-sm mb-6 border-b border-surface-variant pb-4">Order Summary</h3>
+<div class="space-y-4 mb-8">
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-lg bg-surface-container" data-alt="A macro shot of an artisanal Margherita pizza with vibrant red tomato sauce, melted buffalo mozzarella pearls, and fresh green basil leaves on a charred, leopard-spotted crust. The lighting is warm and cinematic, highlighting the steam rising from the pizza. The style is rustic-modern, matching a premium Italian kitchen aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBLjgxb9dRsH3DNSKFxQ6cnTaRo8gFragacrozkamIBkmGounjQMcX_9kAFZuTL48lw-O49Yie5N6fU5h36aHmPg9WAfHaN5ybd7WjLh2_7-WaU4THQwwhwnqTkBTZiU3X0xXAxYPdwsjq2XyLRHa70jxK8yiTgcOQ98upeoFEgrhex-Wdd3N8PEX2UCHRJfsEtYKUpWKF_Pfr3QokmhvV7QSmnHKbaDJibrLxJb0U9n80tKXWHm7ns7bD9MQykOTNz6vNrkdCY8vs')"></div>
+<div>
+<p class="font-label-md text-label-md">Margherita Artisanal x1</p>
+<p class="text-xs text-on-surface-variant">Extra Basil, Thin Crust</p>
+</div>
+</div>
+<span class="font-label-md text-label-md">$18.00</span>
+</div>
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-lg bg-surface-container" data-alt="A close-up of a rustic wooden bowl containing crisp, dark green arugula salad with shavings of parmesan cheese and a light balsamic drizzle. Soft, natural morning light spills over the texture of the leaves. The setting is clean, minimalist, and upscale, echoing a high-end dining experience." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDWQ_bWKACxRDoQqlFG93FNFDOBfpA5p1DhptEUSCdWWIrPQNE33hgxs-Wy1_-SPYgFEyMJSs8ddI0nQa1tQNtnag3UELV7ONNjwSNkceLxHTHHrXfSjvPya8fmZN2Aj6H9UlMkGlnXYOd-CKou1kGbqVxv7qW3SEQQFJFG-p1sY6rfl7w5oRxyOp9svHankaDE1kS9VKSBZjRTJ08LR1aOVN9CjYCG4bAKKLHvVVO8XoXZcTA5IHmiw1zS6_o0F2WY8C_WwrtbmbE')"></div>
+<div>
+<p class="font-label-md text-label-md">Wild Arugula Salad x1</p>
+<p class="text-xs text-on-surface-variant">Lemon Vinaigrette</p>
+</div>
+</div>
+<span class="font-label-md text-label-md">$12.50</span>
+</div>
+</div>
+<div class="space-y-3 pt-6 border-t border-surface-variant">
+<div class="flex justify-between text-on-surface-variant">
+<span class="font-body-md text-body-md">Subtotal</span>
+<span class="font-body-md text-body-md">$30.50</span>
+</div>
+<div class="flex justify-between text-on-surface-variant" id="deliveryFeeRow">
+<span class="font-body-md text-body-md">Delivery Fee</span>
+<span class="font-body-md text-body-md">$3.50</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span class="font-body-md text-body-md">Estimated Tax</span>
+<span class="font-body-md text-body-md">$2.45</span>
+</div>
+<div class="flex justify-between items-center pt-4 text-primary">
+<span class="font-headline-sm text-headline-sm">Grand Total</span>
+<span class="font-headline-sm text-headline-sm" id="grandTotal">$36.45</span>
+</div>
+</div>
+<button class="w-full mt-8 bg-primary-container text-on-primary-container py-4 rounded-xl font-headline-sm text-headline-sm shadow-lg hover:opacity-90 active:scale-[0.98] transition-all">
+                            PLACE ORDER
+                        </button>
+<p class="text-center mt-4 text-xs text-on-surface-variant px-4">
+                            By placing your order, you agree to Bella Crosta's Terms of Service and Privacy Policy.
+                        </p>
+</div>
+<!-- Trust Badge -->
+<div class="flex items-center justify-center gap-4 text-on-surface-variant">
+<span class="material-symbols-outlined">verified_user</span>
+<span class="font-label-md text-label-md">SECURE SSL CHECKOUT</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="mt-12 bg-surface-container-highest dark:bg-surface-container-low flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-margin-desktop py-12 gap-8 w-full border-t border-outline-variant">
+<div class="flex flex-col items-center md:items-start">
+<h4 class="font-headline-sm text-headline-sm text-primary tracking-tight">Bella Crosta</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 text-center md:text-left">© 2024 Bella Crosta Artisanal Pizza. Crafted with passion.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-all" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-all" href="#">Terms of Service</a>
+<a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-all" href="#">Sustainability</a>
+<a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-all" href="#">Allergens</a>
+</div>
+</footer>
+<script>
+        function setMode(mode) {
+            const deliveryBtn = document.getElementById('deliveryBtn');
+            const pickupBtn = document.getElementById('pickupBtn');
+            const addressSection = document.getElementById('addressSection');
+            const deliveryFeeRow = document.getElementById('deliveryFeeRow');
+            const grandTotal = document.getElementById('grandTotal');
+
+            if (mode === 'delivery') {
+                deliveryBtn.classList.add('active-toggle');
+                deliveryBtn.classList.remove('text-on-surface-variant', 'hover:bg-surface-variant/50');
+                pickupBtn.classList.remove('active-toggle');
+                pickupBtn.classList.add('text-on-surface-variant', 'hover:bg-surface-variant/50');
+                
+                addressSection.style.opacity = '1';
+                addressSection.style.pointerEvents = 'auto';
+                deliveryFeeRow.style.display = 'flex';
+                grandTotal.innerText = '$36.45';
+            } else {
+                pickupBtn.classList.add('active-toggle');
+                pickupBtn.classList.remove('text-on-surface-variant', 'hover:bg-surface-variant/50');
+                deliveryBtn.classList.remove('active-toggle');
+                deliveryBtn.classList.add('text-on-surface-variant', 'hover:bg-surface-variant/50');
+                
+                addressSection.style.opacity = '0.3';
+                addressSection.style.pointerEvents = 'none';
+                deliveryFeeRow.style.display = 'none';
+                grandTotal.innerText = '$32.95';
+            }
+        }
+
+        // Handle Payment Radio States
+        const radios = document.querySelectorAll('input[name="payment"]');
+        radios.forEach(radio => {
+            radio.addEventListener('change', (e) => {
+                radios.forEach(r => {
+                    const parent = r.closest('label');
+                    if (r.checked) {
+                        parent.classList.add('border-primary');
+                        parent.classList.remove('border-outline-variant');
+                        const icon = parent.querySelector('.material-symbols-outlined:last-child');
+                        if (icon) icon.style.opacity = '1';
+                    } else {
+                        parent.classList.remove('border-primary');
+                        parent.classList.add('border-outline-variant');
+                        const icon = parent.querySelector('.material-symbols-outlined:last-child');
+                        if (icon && icon.innerText === 'check_circle') icon.style.opacity = '0';
+                    }
+                });
+            });
+        });
+    </script>
+
+
+<nav class="fixed bottom-0 left-0 w-full bg-surface border-t border-outline-variant px-margin-mobile py-3 flex justify-between items-center z-50 md:hidden">
+  <a href="#" class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-primary transition-colors">
+    <span class="material-symbols-outlined">home</span>
+    <span class="text-xs font-label-md">Home</span>
+  </a>
+  <a href="#" class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-primary transition-colors">
+    <span class="material-symbols-outlined">local_pizza</span>
+    <span class="text-xs font-label-md">Menu</span>
+  </a>
+  <a href="#" class="flex flex-col items-center gap-1 text-primary transition-colors">
+    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">receipt_long</span>
+    <span class="text-xs font-label-md">Orders</span>
+  </a>
+  <a href="#" class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-primary transition-colors">
+    <span class="material-symbols-outlined">auto_stories</span>
+    <span class="text-xs font-label-md">Story</span>
+  </a>
+  <a href="#" class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-primary transition-colors">
+    <span class="material-symbols-outlined">person</span>
+    <span class="text-xs font-label-md">Account</span>
+  </a>
+</nav></body></html>

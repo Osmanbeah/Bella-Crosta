@@ -1,0 +1,241 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Order Confirmation | Bella Crosta</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&amp;family=Work+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+        }
+        .linen-texture {
+            background-color: #fbf9f5;
+            background-image: radial-gradient(#8d7167 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+            opacity: 0.03;
+            pointer-events: none;
+        }
+        @keyframes subtle-float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+        .float-icon {
+            animation: subtle-float 4s ease-in-out infinite;
+        }
+        .card-shadow {
+            box-shadow: 0px 4px 20px rgba(51, 51, 51, 0.05);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-high": "#eae8e4",
+                      "on-background": "#1b1c1a",
+                      "background": "#fbf9f5",
+                      "tertiary-container": "#61732b",
+                      "surface-container-highest": "#e4e2de",
+                      "on-tertiary-fixed": "#161e00",
+                      "inverse-primary": "#ffb59b",
+                      "secondary": "#9f402d",
+                      "primary-fixed-dim": "#ffb59b",
+                      "surface-dim": "#dbdad6",
+                      "inverse-surface": "#30312e",
+                      "tertiary-fixed": "#d7ec95",
+                      "surface-bright": "#fbf9f5",
+                      "on-primary": "#ffffff",
+                      "on-error": "#ffffff",
+                      "primary": "#973100",
+                      "on-secondary": "#ffffff",
+                      "on-primary-fixed": "#380d00",
+                      "surface-container-lowest": "#ffffff",
+                      "on-error-container": "#93000a",
+                      "on-surface-variant": "#594139",
+                      "outline": "#8d7167",
+                      "on-tertiary-container": "#e3f8a0",
+                      "outline-variant": "#e1bfb4",
+                      "primary-fixed": "#ffdbcf",
+                      "primary-container": "#c04000",
+                      "on-secondary-container": "#732010",
+                      "secondary-fixed": "#ffdad3",
+                      "on-secondary-fixed": "#3e0500",
+                      "tertiary-fixed-dim": "#bbcf7c",
+                      "on-tertiary-fixed-variant": "#3d4c05",
+                      "inverse-on-surface": "#f2f0ed",
+                      "surface": "#fbf9f5",
+                      "error-container": "#ffdad6",
+                      "tertiary": "#4a5a14",
+                      "surface-container-low": "#f5f3ef",
+                      "secondary-fixed-dim": "#ffb4a5",
+                      "surface-container": "#efeeea",
+                      "on-tertiary": "#ffffff",
+                      "surface-variant": "#e4e2de",
+                      "surface-tint": "#a93700",
+                      "on-secondary-fixed-variant": "#802918",
+                      "on-primary-fixed-variant": "#812800",
+                      "on-primary-container": "#ffe9e3",
+                      "error": "#ba1a1a",
+                      "on-surface": "#1b1c1a",
+                      "secondary-container": "#fd876f"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-desktop": "40px",
+                      "container-max": "1280px",
+                      "unit": "8px",
+                      "gutter": "24px",
+                      "margin-mobile": "16px"
+              },
+              "fontFamily": {
+                      "body-md": ["Work Sans"],
+                      "headline-sm": ["Bricolage Grotesque"],
+                      "display-lg-mobile": ["Bricolage Grotesque"],
+                      "display-lg": ["Bricolage Grotesque"],
+                      "body-lg": ["Work Sans"],
+                      "label-md": ["Work Sans"],
+                      "headline-md": ["Bricolage Grotesque"]
+              },
+              "fontSize": {
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "display-lg-mobile": ["36px", {"lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "800"}],
+                      "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "700"}]
+              }
+            },
+          },
+        }
+      </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body-md min-h-screen relative overflow-x-hidden">
+<!-- Texture Overlay -->
+<div class="fixed inset-0 linen-texture z-0 pointer-events-none"></div>
+<!-- Navigation Shell (Filtered: Transactional State - Suppressed/Simplified) -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-16 bg-surface/80 backdrop-blur-md">
+<h1 class="font-headline-md text-headline-md font-bold text-primary tracking-tight">Bella Crosta</h1>
+<button class="material-symbols-outlined text-on-surface-variant hover:opacity-80 transition-opacity">close</button>
+</header>
+<main class="relative z-10 pt-24 px-margin-mobile flex flex-col items-center justify-center min-h-[calc(100vh-64px)] pb-24">
+<!-- Success Canvas -->
+<div class="max-w-md w-full text-center space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
+<!-- Success Icon -->
+<div class="relative inline-block">
+<div class="absolute inset-0 bg-primary/10 rounded-full scale-150 blur-2xl"></div>
+<div class="float-icon bg-surface-container-lowest rounded-full p-6 card-shadow border border-outline-variant/30" style="transition: transform 1s cubic-bezier(0.34, 1.56, 0.64, 1); transform: scale(1);">
+<span class="material-symbols-outlined text-primary text-[80px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+<!-- Headlines -->
+<div class="space-y-4">
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-background leading-tight">
+                    Grazie!<br><span class="text-secondary">Your pizza is on the way.</span>
+</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-sm mx-auto">
+                    We've received your order and our pizzaiolos are already tossing the dough.
+                </p>
+</div>
+<!-- Order Info Card -->
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/20 card-shadow space-y-6">
+<div class="grid grid-cols-2 gap-4 divide-x divide-outline-variant/30">
+<div class="px-2">
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest mb-1">Order #</p>
+<p class="font-headline-sm text-headline-sm text-on-surface font-bold">BC-92841</p>
+</div>
+<div class="px-2">
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest mb-1">ETA</p>
+<p class="font-headline-sm text-headline-sm text-primary font-bold">35-45 mins</p>
+</div>
+</div>
+<div class="pt-6 border-t border-outline-variant/30 flex items-center justify-center gap-3">
+<span class="material-symbols-outlined text-tertiary-container">location_on</span>
+<span class="font-body-md text-body-md text-on-surface">Delivery to <strong class="font-bold">124 Via Roma, Apt 4B</strong></span>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col gap-4 pt-4">
+<button class="w-full bg-primary-container text-on-primary-container py-4 rounded-lg font-label-md text-label-md shadow-lg active:scale-95 transition-all hover:opacity-90">
+                    Track Order
+                </button>
+<button class="w-full bg-transparent border-2 border-on-surface text-on-surface py-4 rounded-lg font-label-md text-label-md active:scale-95 transition-all hover:bg-on-surface/5">
+                    Return to Home
+                </button>
+</div>
+</div>
+<!-- Decorative Elements (Asymmetric Layout Hint) -->
+<div class="hidden lg:block absolute -left-20 top-1/2 -translate-y-1/2 opacity-20 rotate-12">
+<div class="w-64 h-64 border-4 border-primary rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-[120px] text-primary">local_pizza</span>
+</div>
+</div>
+<div class="hidden lg:block absolute -right-32 bottom-20 opacity-10 -rotate-12">
+<div class="w-80 h-80 rounded-full bg-tertiary-container blur-[100px]"></div>
+</div>
+</main>
+<!-- Footer (Suppressed for Transactional screen) -->
+
+<script>
+        // Micro-interaction for the order status
+        document.querySelector('button:first-of-type').addEventListener('mouseenter', function() {
+            this.style.boxShadow = '0px 10px 30px rgba(151, 49, 0, 0.2)';
+        });
+        document.querySelector('button:first-of-type').addEventListener('mouseleave', function() {
+            this.style.boxShadow = '0px 4px 20px rgba(51, 51, 51, 0.05)';
+        });
+
+        // Add visual flair to the success icon on load
+        window.addEventListener('load', () => {
+            const icon = document.querySelector('.float-icon');
+            icon.style.transition = 'transform 1s cubic-bezier(0.34, 1.56, 0.64, 1)';
+            icon.style.transform = 'scale(1.1)';
+            setTimeout(() => {
+                icon.style.transform = 'scale(1)';
+            }, 600);
+        });
+    </script>
+
+
+<nav class="fixed bottom-0 left-0 w-full bg-surface/80 backdrop-blur-md border-t border-outline-variant/30 z-50 px-margin-mobile py-2">
+    <div class="max-w-md mx-auto flex justify-between items-center">
+        <a href="#" class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-primary transition-colors">
+            <span class="material-symbols-outlined">home</span>
+            <span class="text-label-md font-label-md">Home</span>
+        </a>
+        <a href="#" class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-primary transition-colors">
+            <span class="material-symbols-outlined">local_pizza</span>
+            <span class="text-label-md font-label-md">Menu</span>
+        </a>
+        <a href="#" class="flex flex-col items-center gap-1 text-primary">
+            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">receipt_long</span>
+            <span class="text-label-md font-label-md">Orders</span>
+        </a>
+        <a href="#" class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-primary transition-colors">
+            <span class="material-symbols-outlined">auto_stories</span>
+            <span class="text-label-md font-label-md">Story</span>
+        </a>
+        <a href="#" class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-primary transition-colors">
+            <span class="material-symbols-outlined">person</span>
+            <span class="text-label-md font-label-md">Account</span>
+        </a>
+    </div>
+</nav></body></html>

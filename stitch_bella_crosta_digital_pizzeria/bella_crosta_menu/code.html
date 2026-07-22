@@ -1,0 +1,303 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Menu | Bella Crosta Artisanal Pizza</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&amp;family=Work+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .pizza-card:active { transform: scale(0.98); transition: transform 0.1s; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        /* Subtle texture overlay */
+        .linen-texture {
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n' x='0' y='0'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface-variant": "#594139",
+                        "surface-bright": "#fbf9f5",
+                        "secondary": "#9f402d",
+                        "primary": "#973100",
+                        "inverse-on-surface": "#f2f0ed",
+                        "surface-container-low": "#f5f3ef",
+                        "secondary-container": "#fd876f",
+                        "on-secondary-fixed": "#3e0500",
+                        "surface": "#fbf9f5",
+                        "on-tertiary-fixed": "#161e00",
+                        "on-surface": "#1b1c1a",
+                        "surface-container-highest": "#e4e2de",
+                        "surface-variant": "#e4e2de",
+                        "on-secondary-fixed-variant": "#802918",
+                        "primary-fixed": "#ffdbcf",
+                        "surface-tint": "#a93700",
+                        "tertiary-fixed-dim": "#bbcf7c",
+                        "on-tertiary-fixed-variant": "#3d4c05",
+                        "outline-variant": "#e1bfb4",
+                        "on-secondary-container": "#732010",
+                        "primary-container": "#c04000",
+                        "outline": "#8d7167",
+                        "on-primary-fixed": "#380d00",
+                        "secondary-fixed": "#ffdad3",
+                        "tertiary": "#4a5a14",
+                        "surface-dim": "#dbdad6",
+                        "inverse-surface": "#30312e",
+                        "primary-fixed-dim": "#ffb59b",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#ffb59b",
+                        "tertiary-fixed": "#d7ec95",
+                        "on-secondary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "on-background": "#1b1c1a",
+                        "surface-container": "#efeeea",
+                        "on-tertiary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "tertiary-container": "#61732b",
+                        "secondary-fixed-dim": "#ffb4a5",
+                        "surface-container-high": "#eae8e4",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-container": "#e3f8a0",
+                        "on-primary-container": "#ffe9e3",
+                        "error-container": "#ffdad6",
+                        "surface-container-lowest": "#ffffff",
+                        "background": "#fbf9f5",
+                        "on-primary-fixed-variant": "#812800"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "margin-desktop": "40px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Work Sans"],
+                        "headline-md": ["Bricolage Grotesque"],
+                        "display-lg-mobile": ["Bricolage Grotesque"],
+                        "display-lg": ["Bricolage Grotesque"],
+                        "headline-sm": ["Bricolage Grotesque"],
+                        "body-lg": ["Work Sans"],
+                        "body-md": ["Work Sans"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "display-lg-mobile": ["36px", {"lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "800"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md linen-texture min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile h-16 bg-surface dark:bg-background shadow-sm">
+<button class="p-2 text-on-surface hover:opacity-80 transition-opacity active:scale-95 transition-transform">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed-dim tracking-tight">
+            Bella Crosta
+        </h1>
+<button class="p-2 relative text-on-surface hover:opacity-80 transition-opacity active:scale-95 transition-transform">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+<span class="absolute top-1 right-1 w-4 h-4 bg-primary text-white text-[10px] flex items-center justify-center rounded-full font-bold">2</span>
+</button>
+</header>
+<main class="mt-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<!-- Category Filter Chips -->
+<div class="flex overflow-x-auto no-scrollbar gap-2 py-4 mb-6 sticky top-16 bg-background/80 backdrop-blur-md z-40">
+<button class="px-6 py-2 rounded-full font-label-md text-label-md bg-primary-container text-on-primary-container whitespace-nowrap active:scale-95 transition-all">
+                All
+            </button>
+<button class="px-6 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-surface-container-high whitespace-nowrap active:scale-95 transition-all">
+                Classic
+            </button>
+<button class="px-6 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-surface-container-high whitespace-nowrap active:scale-95 transition-all">
+                Specialty
+            </button>
+<button class="px-6 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-surface-container-high whitespace-nowrap active:scale-95 transition-all">
+                Vegetarian
+            </button>
+<button class="px-6 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-surface-container-high whitespace-nowrap active:scale-95 transition-all">
+                Gluten-Free
+            </button>
+</div>
+<!-- Section Title -->
+<div class="mb-8">
+<h2 class="font-headline-sm text-headline-sm text-on-surface-variant mb-2">Our Artisanal Pizzas</h2>
+<div class="w-12 h-1 bg-primary rounded-full"></div>
+</div>
+<!-- Menu Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Card 1: Margherita -->
+<div class="pizza-card bg-surface-container-lowest rounded-xl p-6 shadow-sm border border-outline-variant hover:shadow-lg transition-all flex flex-col items-center text-center">
+<div class="relative w-48 h-48 mb-6 overflow-hidden rounded-full border-4 border-surface shadow-md">
+<img class="w-full h-full object-cover" data-alt="A top-down detailed close-up of a classic Neapolitan Margherita pizza with vibrant red San Marzano tomato sauce, generous pools of melted white fresh mozzarella, and bright green basil leaves. The crust is puffed and leopard-spotted with char, sitting on a rustic light wood surface. Warm, natural Italian sunlight highlights the glistening olive oil drizzle. High-end food photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5rLwd0nXPUDvwMoRgJcNDLr81yCkedO5ap8lJ2MX8QH8-FvjbNAsrmUEKy9EglTulOuZ7ZGAlT6FqGxXzB5nTrDPi7xbohM--Lk2APaED73dTJrv_JZct-hnzFQi0kIE4kyrv9eU9QrWkBA8eJULLd_4_78gJ8SF8Bmd84BGcF_f6e2UQPOUusd-LW7FxY7qtULwubdSx_0SfxO0Vvjxi-7JDzyNXLSYUZWM5oSB56DbvSbWlYPo3ldM8OMZfeI6tCVJxtSiw45s">
+</div>
+<div class="flex-grow">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Margherita</h3>
+<p class="font-body-md text-body-md text-on-surface-variant px-2 mb-4 leading-relaxed">
+                        San Marzano tomatoes, fresh mozzarella, basil, and EVOO.
+                    </p>
+</div>
+<div class="w-full flex items-center justify-between mt-4">
+<span class="font-headline-sm text-headline-sm text-primary">$14.00</span>
+<button class="bg-primary-container text-on-primary-container font-label-md text-label-md py-3 px-6 rounded-lg active:scale-95 transition-transform">
+                        Add to Cart
+                    </button>
+</div>
+</div>
+<!-- Card 2: Diavola -->
+<div class="pizza-card bg-surface-container-lowest rounded-xl p-6 shadow-sm border border-outline-variant hover:shadow-lg transition-all flex flex-col items-center text-center">
+<div class="relative w-48 h-48 mb-6 overflow-hidden rounded-full border-4 border-surface shadow-md">
+<img class="w-full h-full object-cover" data-alt="An artisanal Diavola pizza shot from above, featuring thin slices of spicy calabrese salami and fiery red chili peppers scattered over bubbling mozzarella and tomato sauce. The crust is perfectly bubbled and golden-brown. The lighting is warm and inviting, evoking a traditional Italian wood-fired oven atmosphere. The color palette is dominated by deep reds and warm terracotta tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxzELNOEwBd25nb3L4A-xvbZSnjSgMbjBCU7GoDQTUGpBNRQOZWPUF7nS55uAwSOkoPrxrP8_HVfu5gEFvjLU22gMkQvs0RAOvy7ldNhtOabjV_vcb5EEOQUSA3zYDFxOGQZXbA9QIMah2JdPBImNfoof6wtabTMJp8McUuDHAN_q6HtVRj1ATHBYVaEjahZG-z0zskki6OUVy9D4jpiMkMfNMTcIKaxTvXNQ81Kr4LPP6rX26SIwI6AIoElNj2sja5ps20RDQQaw">
+</div>
+<div class="flex-grow">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Diavola</h3>
+<p class="font-body-md text-body-md text-on-surface-variant px-2 mb-4 leading-relaxed">
+                        Spicy salami, San Marzano tomatoes, mozzarella, and chili flakes.
+                    </p>
+</div>
+<div class="w-full flex items-center justify-between mt-4">
+<span class="font-headline-sm text-headline-sm text-primary">$16.50</span>
+<button class="bg-primary-container text-on-primary-container font-label-md text-label-md py-3 px-6 rounded-lg active:scale-95 transition-transform">
+                        Add to Cart
+                    </button>
+</div>
+</div>
+<!-- Card 3: Ortolana -->
+<div class="pizza-card bg-surface-container-lowest rounded-xl p-6 shadow-sm border border-outline-variant hover:shadow-lg transition-all flex flex-col items-center text-center">
+<div class="relative w-48 h-48 mb-6 overflow-hidden rounded-full border-4 border-surface shadow-md">
+<img class="w-full h-full object-cover" data-alt="A beautiful Ortolana vegetarian pizza with a rainbow of roasted vegetables including sliced zucchini, eggplant, and bell peppers on a bed of fresh mozzarella. Tiny dots of herbaceous olive oil shimmer under bright, airy kitchen lighting. The crust is artisanal and rustic. The aesthetic is healthy, fresh, and gourmet, presented on a minimalist cream ceramic plate." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC04UZYfebpQdoqRaC-51XXhPNIuSaDP2SQ-kj_e1oWgME6EzkAed09zfd07DHXKuwXGUzMchUIKGkGHo0am6DaDjemuEfYC4kkX36dxucXUDl0EI8xR2IvP-NLyNgbpxVcgqcOlFwn1D4eln0Fx_tV3zS2zjE2CrT-pRqW6dAo7rcm4lzmACp3zJwUAeOZqacsYE4VzS4ytXW4MPbXRNpRGyT_PkpzHozExAmPFJI2CajDNxYoqLQgPcWTVTvZbC4eskuz0dho3xY">
+</div>
+<div class="flex-grow">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Ortolana</h3>
+<p class="font-body-md text-body-md text-on-surface-variant px-2 mb-4 leading-relaxed">
+                        Roasted zucchini, eggplant, bell peppers, mozzarella, and herbs.
+                    </p>
+</div>
+<div class="w-full flex items-center justify-between mt-4">
+<div class="flex flex-col items-start">
+<span class="px-2 py-0.5 mb-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant text-[10px] uppercase font-bold tracking-wider">Vegan Option</span>
+<span class="font-headline-sm text-headline-sm text-primary">$15.00</span>
+</div>
+<button class="bg-primary-container text-on-primary-container font-label-md text-label-md py-3 px-6 rounded-lg active:scale-95 transition-transform">
+                        Add to Cart
+                    </button>
+</div>
+</div>
+<!-- Card 4: Quattro Formaggi -->
+<div class="pizza-card bg-surface-container-lowest rounded-xl p-6 shadow-sm border border-outline-variant hover:shadow-lg transition-all flex flex-col items-center text-center">
+<div class="relative w-48 h-48 mb-6 overflow-hidden rounded-full border-4 border-surface shadow-md">
+<img class="w-full h-full object-cover" data-alt="A rich and decadent Quattro Formaggi pizza with a blend of melted Gorgonzola, fontina, mozzarella, and parmesan. The cheese is golden and bubbling with visible swirls of creamy white and blue cheese. Thinly sliced sage leaves are scattered on top. Set against a dark, moody background to make the golden cheeses pop. High-contrast, warm professional lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCQ-noykTtW8pu8798dOr8ROxJAyeMP4HB75GznRHqdln5ApaqskjuKe5LFyS_JONztsQ-jxUFYQGvOTbMNMXFqR44rYBooi1PZh0eahrcI1pMXCCmRFmJeFbcuSM4En8uUi6p2DpLlL13-rC1rZKQSDpzVz0RnM_Qq8zJ9hJnpCM1HFVKEpp5j8TCVJRVwXReEJ2pifdG-fRMa7jM2rBcPL0CbmtMXke8P9XnN1MEAhmc5aKEnJjA7t7CWjw7TjV0KBj8ovbO3TY">
+</div>
+<div class="flex-grow">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Quattro Formaggi</h3>
+<p class="font-body-md text-body-md text-on-surface-variant px-2 mb-4 leading-relaxed">
+                        Mozzarella, gorgonzola, fontina, and parmesan with sage.
+                    </p>
+</div>
+<div class="w-full flex items-center justify-between mt-4">
+<span class="font-headline-sm text-headline-sm text-primary">$17.00</span>
+<button class="bg-primary-container text-on-primary-container font-label-md text-label-md py-3 px-6 rounded-lg active:scale-95 transition-transform">
+                        Add to Cart
+                    </button>
+</div>
+</div>
+<!-- Card 5: Prosciutto e Funghi -->
+<div class="pizza-card bg-surface-container-lowest rounded-xl p-6 shadow-sm border border-outline-variant hover:shadow-lg transition-all flex flex-col items-center text-center">
+<div class="relative w-48 h-48 mb-6 overflow-hidden rounded-full border-4 border-surface shadow-md">
+<img class="w-full h-full object-cover" data-alt="A rustic Prosciutto e Funghi pizza topped with paper-thin ribbons of cured ham and roasted cremini mushrooms. The pizza is finished with a dusting of fresh parsley and cracked black pepper. The dough is aerated and light, with a deep golden crust. Professional studio lighting emphasizes the textures of the meat and fungi. Neutral cream background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfzrsPjMPiiMM_8499Mz1QUdh7DxxWRMMNSENae9kP2z9i_eDKlzilJe4QYnuj4A3adkXo2xNknxzuRPcOlwh9oOWPku_7sXoIzNwCWdGUYBAzoNBotTAYq2bWOdvb7NhbDeh5m1ZTfcIMlRiAYhjkRvrNFJs3PF1OdJA7SV4pID1LfHO6LY9bQggtmDhxmnw-tttFl5EYv296GBuwc-ex4R9uJhvh6vSxNTltTVtxUkkaMr8EN2Bu5Baw4oMGwRD2sooQu3a-bw4">
+</div>
+<div class="flex-grow">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Prosciutto e Funghi</h3>
+<p class="font-body-md text-body-md text-on-surface-variant px-2 mb-4 leading-relaxed">
+                        Roasted mushrooms, cured prosciutto, mozzarella, and parsley.
+                    </p>
+</div>
+<div class="w-full flex items-center justify-between mt-4">
+<span class="font-headline-sm text-headline-sm text-primary">$18.00</span>
+<button class="bg-primary-container text-on-primary-container font-label-md text-label-md py-3 px-6 rounded-lg active:scale-95 transition-transform">
+                        Add to Cart
+                    </button>
+</div>
+</div>
+<!-- Empty State / Upcoming -->
+<div class="border-2 border-dashed border-outline-variant rounded-xl p-6 flex flex-col items-center justify-center text-center opacity-60">
+<span class="material-symbols-outlined text-4xl mb-2" data-icon="restaurant">restaurant</span>
+<p class="font-headline-sm text-headline-sm">New Seasonal Pizza</p>
+<p class="font-body-md text-body-md">Coming next week</p>
+</div>
+</div>
+<!-- Pagination/Load More (Subtle) -->
+<div class="mt-12 flex justify-center">
+<button class="font-label-md text-label-md text-secondary border-2 border-secondary px-8 py-3 rounded-lg hover:bg-secondary/5 transition-colors active:scale-95">
+                Load More Options
+            </button>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 pb-safe border-t border-outline-variant dark:border-outline bg-surface dark:bg-surface-container-low shadow-lg rounded-t-xl"><a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-surface-variant hover:bg-surface-variant/50 dark:hover:bg-surface-variant/20 active:scale-90 transition-all duration-200" href="#"><span class="material-symbols-outlined" data-icon="home">home</span><span class="font-label-md text-label-md">Home</span></a><a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container dark:bg-primary-fixed dark:text-on-primary-fixed rounded-xl px-4 py-1 active:scale-90 transition-all duration-200" href="#"><span class="material-symbols-outlined" data-icon="local_pizza">local_pizza</span><span class="font-label-md text-label-md">Menu</span></a><a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-surface-variant hover:bg-surface-variant/50 dark:hover:bg-surface-variant/20 active:scale-90 transition-all duration-200" href="#"><span class="material-symbols-outlined" data-icon="receipt_long">receipt_long</span><span class="font-label-md text-label-md">Orders</span></a><a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-surface-variant hover:bg-surface-variant/50 dark:hover:bg-surface-variant/20 active:scale-90 transition-all duration-200" href="#"><span class="material-symbols-outlined" data-icon="auto_stories">auto_stories</span><span class="font-label-md text-label-md">Story</span></a><a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-surface-variant hover:bg-surface-variant/50 dark:hover:bg-surface-variant/20 active:scale-90 transition-all duration-200" href="#"><span class="material-symbols-outlined" data-icon="person">person</span><span class="font-label-md text-label-md">Account</span></a></nav>
+<!-- Micro-interaction Script -->
+<script>
+        document.querySelectorAll('.pizza-card button').forEach(button => {
+            button.addEventListener('click', function(e) {
+                const pizzaName = this.closest('.pizza-card').querySelector('h3').innerText;
+                
+                // Temporary visual feedback
+                const originalText = this.innerText;
+                this.innerText = 'Added!';
+                this.classList.remove('bg-primary-container');
+                this.classList.add('bg-tertiary-container');
+                
+                setTimeout(() => {
+                    this.innerText = originalText;
+                    this.classList.add('bg-primary-container');
+                    this.classList.remove('bg-tertiary-container');
+                }, 1500);
+            });
+        });
+
+        // Filter chip selection logic
+        const chips = document.querySelectorAll('.no-scrollbar button');
+        chips.forEach(chip => {
+            chip.addEventListener('click', () => {
+                chips.forEach(c => {
+                    c.classList.remove('bg-primary-container', 'text-on-primary-container');
+                    c.classList.add('bg-surface-container', 'text-on-surface-variant');
+                });
+                chip.classList.add('bg-primary-container', 'text-on-primary-container');
+                chip.classList.remove('bg-surface-container', 'text-on-surface-variant');
+            });
+        });
+    </script>
+
+
+</body></html>

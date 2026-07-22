@@ -1,0 +1,385 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Bella Crosta | Authentic Artisanal Pizza</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&amp;family=Work+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "surface": "#fbf9f5",
+                "outline-variant": "#e1bfb4",
+                "on-surface-variant": "#594139",
+                "on-primary-container": "#ffe9e3",
+                "error": "#ba1a1a",
+                "secondary-container": "#fd876f",
+                "background": "#fbf9f5",
+                "surface-container-low": "#f5f3ef",
+                "on-surface": "#1b1c1a",
+                "tertiary": "#4a5a14",
+                "on-tertiary-fixed-variant": "#3d4c05",
+                "inverse-surface": "#30312e",
+                "on-tertiary-container": "#e3f8a0",
+                "on-secondary": "#ffffff",
+                "on-tertiary": "#ffffff",
+                "surface-container-highest": "#e4e2de",
+                "tertiary-fixed-dim": "#bbcf7c",
+                "surface-bright": "#fbf9f5",
+                "tertiary-fixed": "#d7ec95",
+                "secondary-fixed-dim": "#ffb4a5",
+                "on-primary-fixed": "#380d00",
+                "surface-tint": "#a93700",
+                "on-primary": "#ffffff",
+                "surface-variant": "#e4e2de",
+                "on-background": "#1b1c1a",
+                "inverse-on-surface": "#f2f0ed",
+                "outline": "#8d7167",
+                "primary-fixed": "#ffdbcf",
+                "error-container": "#ffdad6",
+                "surface-container-high": "#eae8e4",
+                "primary-fixed-dim": "#ffb59b",
+                "on-secondary-fixed-variant": "#802918",
+                "on-secondary-fixed": "#3e0500",
+                "tertiary-container": "#61732b",
+                "surface-dim": "#dbdad6",
+                "primary": "#973100",
+                "surface-container": "#efeeea",
+                "primary-container": "#c04000",
+                "on-tertiary-fixed": "#161e00",
+                "on-primary-fixed-variant": "#812800",
+                "on-error-container": "#93000a",
+                "inverse-primary": "#ffb59b",
+                "secondary-fixed": "#ffdad3",
+                "on-error": "#ffffff",
+                "on-secondary-container": "#732010",
+                "surface-container-lowest": "#ffffff",
+                "secondary": "#9f402d"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            "spacing": {
+                "unit": "8px",
+                "margin-mobile": "16px",
+                "container-max": "1280px",
+                "gutter": "24px",
+                "margin-desktop": "40px"
+            },
+            "fontFamily": {
+                "label-md": ["Work Sans"],
+                "headline-sm": ["Bricolage Grotesque"],
+                "headline-md": ["Bricolage Grotesque"],
+                "body-lg": ["Work Sans"],
+                "display-lg-mobile": ["Bricolage Grotesque"],
+                "display-lg": ["Bricolage Grotesque"],
+                "body-md": ["Work Sans"]
+            },
+            "fontSize": {
+                "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                "display-lg-mobile": ["36px", {"lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "800"}],
+                "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+        }
+        .linen-texture {
+            background-image: radial-gradient(circle at 2px 2px, rgba(51, 51, 51, 0.02) 1px, transparent 0);
+            background-size: 4px 4px;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile h-16 bg-surface shadow-sm md:px-margin-desktop">
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-primary active:scale-95 transition-transform" data-icon="menu">menu</button>
+<span class="font-headline-md text-headline-md font-bold text-primary tracking-tight md:block">Bella Crosta</span>
+</div>
+<div class="flex items-center gap-6">
+<nav class="hidden md:flex gap-8">
+<a class="font-label-md text-label-md text-primary font-bold" href="#">Menu</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:opacity-80 transition-opacity" href="#">Orders</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:opacity-80 transition-opacity" href="#">Story</a>
+</nav>
+<button class="material-symbols-outlined text-primary active:scale-95 transition-transform" data-icon="shopping_bag">shopping_bag</button>
+</div>
+</header>
+<main class="pt-16">
+<!-- Hero Section -->
+<section class="relative h-[707px] w-full overflow-hidden flex items-center justify-center text-center px-margin-mobile">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center" data-alt="A cinematic, high-quality close-up of a rustic wood-fired pizza with a beautifully charred, leopard-spotted crust. The pizza is topped with vibrant red tomato sauce, melted pools of creamy white mozzarella, and fresh green basil leaves. Warm, golden sunlight streams across a weathered wooden table, creating deep shadows and highlighting the texture of the dough. The atmosphere is artisanal, cozy, and hunger-inducing, evoking an authentic Italian kitchen experience." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCfACjXXB-bgE_9GI4XmiLBVdmHnaimP3TGjlqnj226SniVmXcUSQE7vp9uruMUD9ioqzZc30HVYABLnnsR9fsuCsohrkL2rsJTYmr2wYQVodNwBhrkzOtHPW0c6VJEfF-SsTCCVRCVhL_xxOhK9Uwq-GdQZ9mGS1tCUjKxXPQ4QlvI8wH8fQT27axuKjDv8KKy20TzmRXz9bN1SNqC9kKjAmL6vnoquaaBbGAzBTb3NZsuDrwTszJD9UZljJVwGPn2UzH4BFXswMk')"></div>
+<div class="absolute inset-0 bg-black/40"></div>
+</div>
+<div class="relative z-10 max-w-3xl">
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-white mb-8 drop-shadow-lg">
+                    Authentic Pizza, <br>Delivered to Your Door
+                </h1>
+<button class="bg-primary-container text-white font-label-md text-label-md px-10 py-4 rounded-full shadow-lg hover:brightness-110 active:scale-95 transition-all">
+                    Order Now
+                </button>
+</div>
+</section>
+<!-- Featured Pizzas -->
+<section class="py-24 px-margin-mobile max-w-container-max mx-auto">
+<div class="flex flex-col items-center mb-16 text-center">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2">Our Best Sellers</h2>
+<div class="w-16 h-1 bg-primary rounded-full"></div>
+</div>
+<!-- 1-Column Grid (Mobile First) / Transitions to multi-column as per Design System rules -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Pizza 1 -->
+<div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-sm border border-[#EAEAEA] hover:shadow-md transition-shadow group">
+<div class="relative w-48 h-48 mb-6 overflow-hidden rounded-full shadow-inner border-4 border-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A perfect circular Margherita pizza on a wooden board, shot from directly above. It features a bubbly charred crust, bright red tomato sauce, large rounds of fresh buffalo mozzarella, and a single sprig of basil. The lighting is soft and natural, emphasizing the organic textures of the ingredients against a clean cream background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgQBWV8SCUjO7XmPVdY4ep88hVC1t9AdD0_bf91qnEV6egjsCBWUhwktP7yhvEykHL-K52PCIsuuT-OY0X_j7kHQmXgEMG-KA1jxbVhwzX4LJW7BO77s4dbcmMOO-EfX2t_d1Gv3qanbVzV0ddMQkINXaj_kAIbC8M3L6bIaq9dF2H2-5I568ouyZLExD6GcXbJUSgt9A-e19KMIxs0um_rfVCNd_Kxlmxb5K3Ql-wKz5ur95MdrWwg1pENrn4v-psEKxtdaQ-2Es">
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Margherita</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 px-4">San Marzano tomatoes, fresh mozzarella, basil, and EVOO.</p>
+<span class="font-headline-sm text-headline-sm text-primary mb-6">$14.00</span>
+<button class="w-full bg-primary text-white font-label-md text-label-md py-3 rounded-lg hover:opacity-90 active:scale-95 transition-all">Add to Cart</button>
+</div>
+<!-- Pizza 2 -->
+<div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-sm border border-[#EAEAEA] hover:shadow-md transition-shadow group">
+<div class="relative w-48 h-48 mb-6 overflow-hidden rounded-full shadow-inner border-4 border-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="An artisanal Diavola pizza with spicy salami slices, dark olives, and melted mozzarella. The crust is thick and airy with dark charred spots from a wood-fired oven. The rich red sauce contrast with the spicy meats, creating a bold and savory visual. Shot in a warm, rustic Mediterranean lighting style on a limestone surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVOzLqI9EmdakC1Yp4MWG-x78jzt6mnO4QqAci7ccqFy2idwP-xnKTvvDMatobcSmvD_jbUk_vkdqoSTcEIeZ5lywoDN_c02ySphnzOK0gXVxn4V-Wr4Su7A3c_JfoInDbnoR09EoE_lrmDRs24bHnUpUrsx2VY80G8W3bw-spdGbR9ZqzZFkOfZZVV3krKrMsCl9G2ItfEjiLscE1kM2dPH1pbgSR4Sjvyg3yZpfkDUgkVwRnbdp8x9ar0uwb47RxAtf02Pxv7tc">
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Diavola</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 px-4">Spicy salami, San Marzano tomatoes, chili flakes, and black olives.</p>
+<span class="font-headline-sm text-headline-sm text-primary mb-6">$16.50</span>
+<button class="w-full bg-primary text-white font-label-md text-label-md py-3 rounded-lg hover:opacity-90 active:scale-95 transition-all">Add to Cart</button>
+</div>
+<!-- Pizza 3 -->
+<div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-sm border border-[#EAEAEA] hover:shadow-md transition-shadow group">
+<div class="relative w-48 h-48 mb-6 overflow-hidden rounded-full shadow-inner border-4 border-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A vibrant Ortolana pizza loaded with colorful roasted vegetables including bell peppers, zucchini, and eggplant. The pizza is sprinkled with a light dusting of parmesan and fresh herbs. The background is a rustic linen cloth, giving it a home-cooked, garden-fresh aesthetic with soft morning light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtDWGaJ0Z8qx4hhXoTWvsht_VJTQDaN3Usb_rB9jPWOClhaUWMqj-T-d6R8kFChY10ok7pUCv5T7y5YFdjrRIUMo18118XBBKwPuYL5mC4pRXLGzckFuGPT-xu1wabMr-8rVPvbL6GrDNp50omLInQMzqOH82qT1AP7uLV952ZkNh9F0GQdf66tebWxrowoSYuJ3YxnGvQxwaP7NRkpv5m4XeiyeUvTB7cskC5R91yLXnGkyn0Bh9D04bwHQmdHM84BIer1CRsVQg">
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Ortolana</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 px-4">Roasted zucchini, peppers, eggplant, and smoked provolone.</p>
+<span class="font-headline-sm text-headline-sm text-primary mb-6">$15.00</span>
+<button class="w-full bg-primary text-white font-label-md text-label-md py-3 rounded-lg hover:opacity-90 active:scale-95 transition-all">Add to Cart</button>
+</div>
+</div>
+</section>
+<!-- Brand Story -->
+<section class="linen-texture bg-surface-container-low py-24 px-margin-mobile">
+<div class="max-w-container-max mx-auto grid md:grid-cols-2 gap-16 items-center">
+<div class="rounded-2xl overflow-hidden shadow-2xl">
+<img class="w-full h-auto aspect-[4/3] object-cover" data-alt="A black and white photograph of an elderly Italian baker with flour-dusted hands kneading dough in a sunlit kitchen. Beside him, a younger person watches intently. The scene is filled with traditional tools like wooden peels and vintage mixing bowls. The image conveys a sense of generational heritage, passion for craftsmanship, and the slow, deliberate process of artisanal bread making." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxELF2_hDBkVGt7U6WD3SPCYo4BJPMvGDYxFVvna_UxYc1AkeH4eG1Wp-fg4YwumeI6ZIlJUNGhuBfTVIxoNcT9qYMW5M6e2qtjN2KmnR7la6e-QOcLA8N5Yjc0XTLYMijzqpjLNYyFRc5OfX-A8dC-mBQc95iHxxbEiZ2EDwbRJMA6e5grPzLJufrzF4mTIbLb5O5oBpEibJTdneo_dJ6QoCeflzjr2y0BYFReBSdOLXWW1lAcBY2RCm_st6RtwRQvIpJoNoCzCE">
+</div>
+<div class="space-y-6">
+<span class="font-label-md text-label-md text-tertiary uppercase tracking-widest">Heritage</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">The Bella Crosta Story</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        Rooted in the sun-drenched hills of Tuscany, our family has been perfecting the art of the perfect 'crosta' for three generations. We believe that true pizza is a balance of chemistry and heart—using only wild-fermented dough and the freshest ingredients sourced from local artisans.
+                    </p>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-tertiary hover:opacity-70 transition-all" href="#">
+                        Learn more <span class="material-symbols-outlined">arrow_right_alt</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Testimonials Carousel -->
+<section class="py-24 overflow-hidden">
+<div class="px-margin-mobile max-w-container-max mx-auto mb-12">
+<h2 class="font-headline-md text-headline-md text-on-surface">What Our Family Says</h2>
+</div>
+<div class="flex overflow-x-auto hide-scrollbar gap-8 px-margin-mobile pb-8 snap-x snap-mandatory">
+<!-- Testimonial 1 -->
+<div class="min-w-[300px] md:min-w-[400px] snap-center bg-white p-8 rounded-xl shadow-sm border border-outline-variant/30 flex flex-col justify-between">
+<div>
+<div class="flex gap-1 text-secondary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic">"The best crust I've ever had outside of Naples. The char is perfection and the toppings are so fresh you can taste the sun."</p>
+</div>
+<div class="mt-8 flex items-center gap-4">
+<img class="w-12 h-12 rounded-full object-cover border-2 border-primary-fixed" data-alt="A professional headshot of a smiling young woman with curly hair, set against a blurred urban café background. She is wearing a warm terracotta-colored sweater that complements the brand's palette. The lighting is soft and flattering, creating a friendly and authentic persona for a customer testimonial." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKkr3dGt0-IUap909RvQWFIcGSnSoNVLqBtktPo-5BSdSUQ9clROiehA6VDtGRV4FvEu99bWXlGJzdxaHjsSEw5Gez-l1088Cd8-U4bhK6aLoAVuI-IK59CHhY2WpaM1ccmcgUxNJR7mv1_4tNRgDZpjg3mUtaJ9QmYIJBzKplx3ZAdKd_s0BYMR-5AWE3y8TyZZSf5yOlo8StItVj6emr8rVYZ9Iky956s5RrMeph5QyxCXF4KaVt_Xi78ic_Mvp0E9LSPF2aVJU">
+<div>
+<p class="font-label-md text-label-md text-on-surface">Sophia Rossi</p>
+<p class="text-[12px] text-outline">Verified Pizza Lover</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="min-w-[300px] md:min-w-[400px] snap-center bg-white p-8 rounded-xl shadow-sm border border-outline-variant/30 flex flex-col justify-between">
+<div>
+<div class="flex gap-1 text-secondary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic">"Ordering was seamless, and the delivery was surprisingly fast. The pizza arrived piping hot, just as if it came right out of the oven!"</p>
+</div>
+<div class="mt-8 flex items-center gap-4">
+<img class="w-12 h-12 rounded-full object-cover border-2 border-primary-fixed" data-alt="A friendly middle-aged man with short hair and glasses, wearing a casual linen shirt. He is outdoors in a garden setting with warm, dappled sunlight filtering through leaves. The look is approachable and sincere, representing a satisfied suburban customer for a high-end food service." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiWUJ6f147R5U41R16r0enAa2elNPVZtHD2y_QZzXLTs8ZNOZE3tvROt4fo9AjTCi7JYA3K4lLS-hcpZuUtHT2UXM-sEsYOpTbxTEfCV3FS0MSnQhAs4n_tKjtFedneGEFJdfdCeawr2HAlcxJJKpGmGYqQpEog3uj2SCHK_j1isRoF7uF4x6RzoKC6H-PGKDWvSjgl43AsgyXpT09Ip-NHUU4TOWpT6ufljD0ZshOLuitHmRfIsxJZI4BnlUAoukeorH82HjPp4k">
+<div>
+<p class="font-label-md text-label-md text-on-surface">Marco Belini</p>
+<p class="text-[12px] text-outline">Loyal Customer</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="min-w-[300px] md:min-w-[400px] snap-center bg-white p-8 rounded-xl shadow-sm border border-outline-variant/30 flex flex-col justify-between">
+<div>
+<div class="flex gap-1 text-secondary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0.5;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic">"A true hidden gem in the city. The Ortolana is a masterpiece of seasonal flavors. Highly recommend the truffle honey drizzle!"</p>
+</div>
+<div class="mt-8 flex items-center gap-4">
+<img class="w-12 h-12 rounded-full object-cover border-2 border-primary-fixed" data-alt="A stylish young man with a beard and trendy glasses, leaning against a clean white wall in a modern apartment. He has a minimalist and urban aesthetic, representing the brand's appeal to younger, design-conscious food enthusiasts. Soft daylight illuminates the scene from the side." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiuWlPMnv2qJPtKQDfcCdgo1fdLCTT5o6Y-U55lA08ayqDr9YCsYTZP6OZAxiV-00sgES2XAT7DvLynVQAIbgooBTMCsCbaU53OrWutYN6ReYQ3WSUMkRERfn59XYasAyQQ3wPhe70QyGGyJilLwdNGrfbJSyGMC2Yk6tMCh0BS6v5TXlH7eLGP3bHnoGWhvbX5WfGQXTP8lL567Dr4q2SaK-LYmeHJBJzVj5TcWWGiR60vFzzHaNxMm8ncAa1NcG8R00m79o3TAk">
+<div>
+<p class="font-label-md text-label-md text-on-surface">Julian Thorne</p>
+<p class="text-[12px] text-outline">Food Blogger</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-inverse-surface text-inverse-on-surface pt-20 pb-12">
+<div class="max-w-container-max mx-auto px-margin-mobile grid grid-cols-1 md:grid-cols-3 gap-16">
+<!-- Brand & Newsletter -->
+<div class="space-y-8">
+<h3 class="font-headline-sm text-headline-sm text-primary-fixed tracking-tight">Bella Crosta</h3>
+<div class="space-y-4">
+<p class="font-body-md text-body-md text-surface-variant">Join the Family</p>
+<p class="font-label-md text-label-md text-outline-variant">Sign up for exclusive offers and secret recipes.</p>
+<div class="flex gap-2">
+<input class="bg-surface/10 border border-outline-variant/30 rounded-lg px-4 py-2 flex-grow text-white placeholder:text-outline-variant focus:ring-2 focus:ring-primary-fixed focus:border-transparent outline-none" placeholder="Email Address" type="email">
+<button class="bg-primary text-white p-2 rounded-lg material-symbols-outlined">send</button>
+</div>
+</div>
+</div>
+<!-- Contact Info -->
+<div class="space-y-8">
+<h4 class="font-label-md text-label-md uppercase tracking-widest text-primary-fixed">Contact</h4>
+<ul class="space-y-4 font-body-md text-body-md text-surface-variant">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed">location_on</span>
+                        123 Dough Street, Pizza Plaza, FL 33101
+                    </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed">call</span>
+                        +1 (555) CROSTA-1
+                    </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed">schedule</span>
+                        Daily: 11:00 AM - 10:00 PM
+                    </li>
+</ul>
+</div>
+<!-- Links & Social -->
+<div class="space-y-8">
+<h4 class="font-label-md text-label-md uppercase tracking-widest text-primary-fixed">Follow Us</h4>
+<div class="flex gap-6">
+<a class="w-12 h-12 flex items-center justify-center rounded-full bg-surface/10 hover:bg-primary-container transition-colors group" href="#">
+<span class="material-symbols-outlined text-surface-variant group-hover:text-white">face_nod</span>
+</a>
+<a class="w-12 h-12 flex items-center justify-center rounded-full bg-surface/10 hover:bg-primary-container transition-colors group" href="#">
+<span class="material-symbols-outlined text-surface-variant group-hover:text-white">camera</span>
+</a>
+</div>
+<div class="pt-4 border-t border-outline-variant/20 flex flex-wrap gap-4 text-[12px] text-outline-variant">
+<a class="hover:text-white" href="#">Privacy Policy</a>
+<a class="hover:text-white" href="#">Terms of Service</a>
+<a class="hover:text-white" href="#">Allergens</a>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile mt-20 pt-8 border-t border-outline-variant/10 text-center">
+<p class="font-body-md text-body-md text-outline-variant opacity-60">© 2024 Bella Crosta Artisanal Pizza. Crafted with passion.</p>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 pb-safe bg-surface border-t border-outline-variant shadow-lg rounded-t-xl"><a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl px-4 py-1 active:scale-90 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-md text-label-md">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant active:scale-90 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">local_pizza</span>
+<span class="font-label-md text-label-md">Menu</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant active:scale-90 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">receipt_long</span>
+<span class="font-label-md text-label-md">Orders</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant active:scale-90 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">auto_stories</span>
+<span class="font-label-md text-label-md">Story</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant active:scale-90 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-label-md text-label-md">Account</span>
+</a></nav>
+<script>
+        // Micro-interactions for scrolling
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-md');
+                header.classList.add('bg-surface/95');
+                header.classList.add('backdrop-blur-md');
+            } else {
+                header.classList.remove('shadow-md');
+                header.classList.remove('bg-surface/95');
+                header.classList.remove('backdrop-blur-md');
+            }
+        });
+
+        // Add to Cart Micro-interaction
+        document.querySelectorAll('button').forEach(btn => {
+            if(btn.innerText === 'Add to Cart') {
+                btn.addEventListener('click', function() {
+                    const originalText = this.innerText;
+                    this.innerText = 'Added!';
+                    this.classList.add('bg-tertiary-container');
+                    setTimeout(() => {
+                        this.innerText = originalText;
+                        this.classList.remove('bg-tertiary-container');
+                    }, 2000);
+                });
+            }
+        });
+    </script>
+
+
+</body></html>
